@@ -1,5 +1,6 @@
 header {
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     /* align-items: center; */
     background-color: chartreuse;
@@ -62,4 +63,30 @@ img {
 a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        flex-direction: column;
+        flex-wrap: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #header-container {
+        flex-direction: column;
+        flex-wrap: 1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+        width: 500px;
+        margin: 5px;
+    }
+
+    img {
+        width: 10%;
+        height: 10%;
+    }
 }
