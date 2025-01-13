@@ -63,7 +63,7 @@ export default function Footer() {
                             className="hover:text-blue-400 transition duration-300"
                         >
                             <img
-                                src="/linkedin-light.svg"
+                                src="/linkedin-dark.svg"
                                 alt="LinkedIn"
                                 className="w-6 h-6"
                             />
@@ -75,7 +75,7 @@ export default function Footer() {
                             className="hover:text-gray-200 transition duration-300"
                         >
                             <img
-                                src="/github-light.svg"
+                                src="/github-dark.svg"
                                 alt="GitHub"
                                 className="w-6 h-6 text-white"
                             />
@@ -93,7 +93,7 @@ export default function Footer() {
             {/* Bottom Section */}
             <div className="border-t border-gray-700 mt-6 pt-4 text-center">
                 <p>
-                    &copy; 2025 Patrick Allen. All rights reserved.
+                    &copy;2025 Patrick Allen. All rights reserved.
                 </p>
             </div>
         </footer>

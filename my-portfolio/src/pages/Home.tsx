@@ -10,13 +10,13 @@ const skills = [
     {
         name: "React.js",
         description:
-            "Expert in React.js, specializing in building reusable components, managing state with Redux, and optimizing performance with React hooks like useMemo and useCallback. Developed responsive, SEO-friendly, and accessible user interfaces.",
+            "Expert in React.js, specializing in building reusable components, managing state with Redux, and optimizing performance with React hooks like useMemo and useCallback. Developed responsive, SEO-friendly, and accessible user interfaces. This website was developed using this framework!",
         image: '/reactImage.svg',
     },
     {
         name: "TypeScript",
         description:
-            "Implemented TypeScript to enhance codebase maintainability and reduce runtime errors. Skilled in defining custom types, interfaces, and generics to improve code clarity and team collaboration in larger projects.",
+            "Implemented TypeScript to enhance codebase maintainability and reduce runtime errors. Skilled in defining custom types, interfaces, and generics to improve code clarity and team collaboration in larger projects. This website was developed using this language!",
         image: '/typescriptImage.svg',
     },
     {
@@ -43,16 +43,22 @@ const skills = [
             "Hands-on experience with Terraform for infrastructure as code (IaC). Created reusable configurations, managed cloud resources, and implemented policy as code with Rego to ensure compliance and governance.",
         image: '/terraform.svg',
     },
+    {
+        name: 'Tailwindcss',
+        description:
+            "Experienced with Tailwindcss for easy and simple styling of elements. This website was developed using this framework!",
+        image: '/tailwind.svg'
+    }
 ];
 
 
 export default function HomePage() {
     return (
-        <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-4 mt-9">
-            <h2> 
+        <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-4 mt-14">
+            <h2>
                 Hello. Welcome to Patrick's Portfolio!
             </h2>
-            <p> 
+            <p className="mb-5">
                 This portfolio is still in progress, for now, here's a list of my proficiencies:
             </p>
             {skills.map((skill, index) => (
@@ -64,8 +70,8 @@ export default function HomePage() {
                     <img
                         className="w-full md:w-1/2 h-48 md:h-auto bg-cover bg-center"
                         src={skill.image}
-                    />    
-                    
+                    />
+
                     <div className="w-full md:w-1/2 p-6 flex flex-col justify-center">
                         <h3 className="text-2xl font-bold text-gray-800 mb-4">{skill.name}</h3>
                         <p className="text-gray-600">{skill.description}</p>

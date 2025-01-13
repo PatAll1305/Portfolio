@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 export default function Header() {
     const navigate = useNavigate();
     return (
-        <div className="bg-gray-900 text-white p-4 fixed top-0 left-0 w-full z-50 shadow-lg mb-7">
+        <div className="bg-gray-900 text-white p-4 fixed top-0 left-0 w-full z-50 shadow-lg mb-10">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Portfolio Title */}
                 <h1
