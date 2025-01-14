@@ -19,18 +19,10 @@ export default function Layout() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </Router>
-      <main className="flex-grow">
-        <Outlet />
-      </main>
-      <Router>
+        <main className="flex-grow">
+          <Outlet />
+        </main>
         <Footer />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
       </Router>
     </div>
   );
