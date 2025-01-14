@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+
+    const navigate = useNavigate();
     return (
         <footer className="bg-gray-900 text-gray-300 p-6 ">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -19,7 +22,7 @@ export default function Footer() {
                     <ul className="space-y-2">
                         <li>
                             <a
-                                href="/"
+                                onClick={() => navigate('/')}
                                 className="hover:text-blue-400 transition duration-300"
                             >
                                 Home
@@ -27,7 +30,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <a
-                                href="/about"
+                                onClick={() => navigate('/about')}
                                 className="hover:text-blue-400 transition duration-300"
                             >
                                 About
@@ -35,7 +38,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <a
-                                href="/projects"
+                                onClick={() => navigate('/projects')}
                                 className="hover:text-blue-400 transition duration-300"
                             >
                                 Projects
@@ -43,7 +46,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <a
-                                href="/contact"
+                                onClick={() => navigate('/contact')}
                                 className="hover:text-blue-400 transition duration-300"
                             >
                                 Contact Me
