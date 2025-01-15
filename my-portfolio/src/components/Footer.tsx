@@ -63,7 +63,7 @@ export default function Footer() {
                             href="https://www.linkedin.com/in/patrick-allen-540938246/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-blue-400 transition duration-300"
+                            className="hover:text-blue-400 transition duration-300 cursor-pointer"
                         >
                             <img
                                 src="/linkedin-dark.svg"
@@ -75,7 +75,7 @@ export default function Footer() {
                             href="https://github.com/PatAll1305"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="hover:text-gray-200 transition duration-300"
+                            className="hover:text-gray-200 transition duration-300 cursor-pointer"
                         >
                             <img
                                 src="/github-dark.svg"
@@ -85,7 +85,7 @@ export default function Footer() {
                         </a>
                         <a
                             href="mailto:patrickallen1305@gmail.com"
-                            className="hover:text-red-500 transition duration-300"
+                            className="hover:text-red-500 transition duration-300 cursor-pointer"
                         >
                             <img src="/email.svg" alt="Email" className="w-6 h-6" />
                         </a>
