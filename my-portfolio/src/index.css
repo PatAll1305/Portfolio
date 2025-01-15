@@ -685,6 +685,10 @@ video {
   max-width: 56rem;
 }
 
+.max-w-screen-md {
+  max-width: 768px;
+}
+
 .flex-grow {
   flex-grow: 1;
 }

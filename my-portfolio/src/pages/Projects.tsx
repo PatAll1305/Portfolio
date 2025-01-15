@@ -25,6 +25,12 @@ const projects = [
         image: "/playwright.svg",
         link: "https://github.com/PatAll1305/Playwright-project"
     },
+    {
+        name: "Practice challenge",
+        description: "A coding challenge I did that had to be created in 15 hours or less.",
+        image: "/data-viewer.png",
+        link: "https://vg-takehome.onrender.com"
+    },
 ];
 
 export default function Projects() {
@@ -37,7 +43,7 @@ export default function Projects() {
                 {projects.map((project, index) => (
                     <a
                         key={index}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col"
+                        className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col max-w-screen-md"
                         href={project.link}
                         target="_blank"
                     >
