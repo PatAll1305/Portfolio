@@ -52,18 +52,14 @@ const skills = [
 ];
 
 
-export default function HomePage() {
+export default function Home() {
     return (
         <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-4 mt-14">
-            <h2>
-                Hello. Welcome to Patrick's Portfolio!
-            </h2>
-            <p className="mb-5">
-                This portfolio is still in progress, for now, here's a list of my proficiencies:
-            </p>
+            <br></br>
+            <br></br>
             {skills.map((skill, index) => (
                 <div
-                    key={skill.name}
+                    key={index}
                     className={`flex flex-col md:flex-row ${index % 2 === 0 ? "md:flex-row-reverse" : ""
                         } items-center md:items-stretch bg-white shadow-md rounded-lg overflow-hidden mb-8 w-full max-w-4xl`}
                 >
