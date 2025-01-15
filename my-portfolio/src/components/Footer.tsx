@@ -23,7 +23,7 @@ export default function Footer() {
                         <li>
                             <a
                                 onClick={() => navigate('/')}
-                                className="hover:text-blue-400 transition duration-300"
+                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 Home
                             </a>
@@ -31,7 +31,7 @@ export default function Footer() {
                         <li>
                             <a
                                 onClick={() => navigate('/about')}
-                                className="hover:text-blue-400 transition duration-300"
+                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 About
                             </a>
@@ -39,7 +39,7 @@ export default function Footer() {
                         <li>
                             <a
                                 onClick={() => navigate('/projects')}
-                                className="hover:text-blue-400 transition duration-300"
+                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 Projects
                             </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                         <li>
                             <a
                                 onClick={() => navigate('/contact')}
-                                className="hover:text-blue-400 transition duration-300"
+                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 Contact Me
                             </a>
