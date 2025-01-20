@@ -45,6 +45,10 @@ const skills = [
         name: 'Flask',
         image: "/flask.svg"
     },
+    {
+        name: "Vite",
+        image: '/vite.svg'
+    }
 ];
 
 export default function Skills() {

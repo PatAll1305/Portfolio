@@ -94,7 +94,7 @@ export default function About() {
                     <p className="text-gray-700 text-lg">
                         Thank you for taking the time to learn about me! Feel free to{" "}
                         <a
-                            href="/contact"
+                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                             className="text-blue-500 underline hover:text-blue-700"
                         >
                             reach out
@@ -103,6 +103,6 @@ export default function About() {
                     </p>
                 </footer>
             </div>
-        </div>
+        </div >
     );
 }

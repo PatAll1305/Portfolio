@@ -7,7 +7,7 @@ export default function Header() {
                 {/* Portfolio Title */}
                 <h1
                     className="text-xl font-bold cursor-pointer hover:text-blue-400 transition-colors"
-                    onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                     My Portfolio
                 </h1>
@@ -16,10 +16,16 @@ export default function Header() {
                 <nav>
                     <div className="flex space-x-4">
                         <a
-                            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                            onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
                             Top
+                        </a>
+                        <a
+                            onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="hover:text-blue-400 cursor-pointer transition-colors"
+                        >
+                            Skills
                         </a>
                         <a
                             onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
@@ -38,12 +44,6 @@ export default function Header() {
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
                             Contact
-                        </a>
-                        <a
-                            onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="hover:text-blue-400 cursor-pointer transition-colors"
-                        >
-                            Skills
                         </a>
                     </div>
                 </nav>

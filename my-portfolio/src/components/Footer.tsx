@@ -19,7 +19,7 @@ export default function Footer() {
                     <ul className="space-y-2">
                         <li>
                             <a
-                                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                                onClick={() => document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 Top
@@ -39,6 +39,14 @@ export default function Footer() {
                                 className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
+                            >
+                                About Me
                             </a>
                         </li>
                         <li>
