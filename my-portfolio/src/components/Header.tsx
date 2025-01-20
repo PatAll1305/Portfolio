@@ -28,16 +28,16 @@ export default function Header() {
                             Skills
                         </a>
                         <a
-                            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                            className="hover:text-blue-400 cursor-pointer transition-colors"
-                        >
-                            About
-                        </a>
-                        <a
                             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
                             Projects
+                        </a>
+                        <a
+                            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="hover:text-blue-400 cursor-pointer transition-colors"
+                        >
+                            About
                         </a>
                         <a
                             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

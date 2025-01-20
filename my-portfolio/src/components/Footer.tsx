@@ -27,18 +27,18 @@ export default function Footer() {
                         </li>
                         <li>
                             <a
-                                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
-                            >
-                                Projects
-                            </a>
-                        </li>
-                        <li>
-                            <a
                                 onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
                                 className="hover:text-blue-400 transition duration-300 cursor-pointer"
                             >
                                 Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                                className="hover:text-blue-400 transition duration-300 cursor-pointer"
+                            >
+                                Projects
                             </a>
                         </li>
                         <li>
