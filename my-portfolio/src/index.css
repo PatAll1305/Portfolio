@@ -981,6 +981,21 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity, 1));
 }
 
+.text-lime-400 {
+  --tw-text-opacity: 1;
+  color: rgb(163 230 53 / var(--tw-text-opacity, 1));
+}
+
+.text-lime-950 {
+  --tw-text-opacity: 1;
+  color: rgb(26 46 5 / var(--tw-text-opacity, 1));
+}
+
+.text-gray-950 {
+  --tw-text-opacity: 1;
+  color: rgb(3 7 18 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
