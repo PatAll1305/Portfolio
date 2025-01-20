@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="min-h-screen bg-gray-100 p-6 mt-20">
+        <div id='projects' className="min-h-screen bg-gray-100 p-6 mt-20">
             <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
                 My Projects
             </h1>

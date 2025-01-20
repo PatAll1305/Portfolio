@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
     return (
-        <div className="flex flex-col justify-center items-center bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md max-w-md w-full mx-auto space-y-6 mt-20">
+        <div id='contact' className="flex flex-col justify-center items-center bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md max-w-md w-full mx-auto space-y-6 mt-20">
             <h2 className="text-2xl font-semibold text-gray-700">Contact Me</h2>
             <p className="text-gray-600 text-center max-w-sm">
                 Feel free to connect with me on LinkedIn, check out my GitHub projects, or email me directly.

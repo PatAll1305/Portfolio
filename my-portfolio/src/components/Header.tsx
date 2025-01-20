@@ -1,15 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function Header() {
-    const navigate = useNavigate();
     return (
         <div className="bg-gray-900 text-white p-4 fixed top-0 left-0 w-full z-50 shadow-lg mb-10">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Portfolio Title */}
                 <h1
                     className="text-xl font-bold cursor-pointer hover:text-blue-400 transition-colors"
-                    onClick={() => navigate('/')}
+                    onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                     My Portfolio
                 </h1>
@@ -18,28 +16,34 @@ export default function Header() {
                 <nav>
                     <div className="flex space-x-4">
                         <a
-                            onClick={() => navigate('/')}
+                            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
-                            Home
+                            Top
                         </a>
                         <a
-                            onClick={() => navigate('/about')}
+                            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
                             About
                         </a>
                         <a
-                            onClick={() => navigate('/projects')}
+                            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
                             Projects
                         </a>
                         <a
-                            onClick={() => navigate('/contact')}
+                            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                             className="hover:text-blue-400 cursor-pointer transition-colors"
                         >
                             Contact
+                        </a>
+                        <a
+                            onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+                            className="hover:text-blue-400 cursor-pointer transition-colors"
+                        >
+                            Skills
                         </a>
                     </div>
                 </nav>
