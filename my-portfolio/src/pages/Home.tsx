@@ -13,12 +13,12 @@ export default function Home() {
                 className="relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-white"
                 style={{ backgroundImage: "url('/headshot.JPG')" }}
             >
-                <h1 className="text-4xl font-bold">Patrick Allen</h1>
-                <p className="mt-4 text-lg">Software Developer | QA Tester | Problem Solver</p>
+                <h1 className="text-4xl font-bold text-gray-100">Patrick Allen</h1>
+                <p className="mt-14 text-lg">Software Developer | QA Tester | Problem Solver</p>
                 <a
                     href="/Patrick_Allen-Resume.pdf"
                     download
-                    className="mt-6 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                    className="text-gray-100 mt-6 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
                 >
                     Download Resume
                 </a>
