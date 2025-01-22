@@ -1,4 +1,5 @@
 import React from "react";
+import AnimatedWrapper from "./Animations";
 
 const projects = [
     {
@@ -35,37 +36,40 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div id='projects' className="min-h-screen bg-gray-100 p-6 mt-10">
-            <h1 className="text-3xl font-bold text-center mb-1 text-gray-800">
-                My Projects
-            </h1>
-            <p className="text-1xl font-bold text-center mb-8 text-gray-800">
-                Projects' live site may take up to a minute to load,
-                this is due to Render spinning down with inactivity
-                and does not reflect poor loading performance on my end.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {projects.map((project, index) => (
-                    <a
-                        key={index}
-                        className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col max-w-screen-md"
-                        href={project.link}
-                        target="_blank"
-                    >
-                        <img
-                            src={project.image}
-                            alt={project.name}
-                            className="h-48 w-full object-cover"
-                        />
-                        <div className="p-4 flex-grow">
-                            <h2 className="text-xl font-semibold text-gray-800">
-                                {project.name}
-                            </h2>
-                            <p className="text-gray-600">{project.description}</p>
-                        </div>
-                    </a>
-                ))}
+        <AnimatedWrapper>
+
+            <div id='projects' className="min-h-screen bg-gray-100 p-6 mt-10">
+                <h1 className="text-3xl font-bold text-center mb-1 text-gray-800">
+                    My Projects
+                </h1>
+                <p className="text-1xl font-bold text-center mb-8 text-gray-800">
+                    Projects' live site may take up to a minute to load,
+                    this is due to Render spinning down with inactivity
+                    and does not reflect poor loading performance on my end.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {projects.map((project, index) => (
+                        <a
+                            key={index}
+                            className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col max-w-screen-md"
+                            href={project.link}
+                            target="_blank"
+                        >
+                            <img
+                                src={project.image}
+                                alt={project.name}
+                                className="h-48 w-full object-cover"
+                            />
+                            <div className="p-4 flex-grow">
+                                <h2 className="text-xl font-semibold text-gray-800">
+                                    {project.name}
+                                </h2>
+                                <p className="text-gray-600">{project.description}</p>
+                            </div>
+                        </a>
+                    ))}
+                </div>
             </div>
-        </div>
+        </AnimatedWrapper>
     );
 }

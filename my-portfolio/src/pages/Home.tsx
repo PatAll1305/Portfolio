@@ -19,6 +19,10 @@ export default function Home() {
                     href="/Patrick_Allen-Resume.pdf"
                     download
                     className="mt-6 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
+                    style={{
+                        boxShadow: "0 0 20px rgba(0, 120, 255, 0.6)",
+                        position: "relative",
+                    }}
                 >
                     Download Resume
                 </a>
