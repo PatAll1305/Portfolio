@@ -9,7 +9,7 @@ export default function Header() {
                     className="text-xl font-bold cursor-pointer hover:text-blue-400 transition-colors"
                     onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                    My Portfolio
+                    Patrick Allen
                 </h1>
 
                 {/* Navigation Links */}
