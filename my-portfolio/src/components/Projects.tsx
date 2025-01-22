@@ -51,7 +51,7 @@ export default function Projects() {
                     <AnimatedWrapper animation={index % 2 === 0 ? "fadeRight" : "fadeLeft"} >
                         <a
                             key={index}
-                            className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col max-w-screen-md"
+                            className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col max-w-screen-md p-6 bg-white rounded-lg shadow-lg hover:shadow-xl hover:translate-y-[-5px] transition-all duration-300"
                             href={project.link}
                             target="_blank"
                         >

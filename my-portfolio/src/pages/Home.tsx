@@ -10,20 +10,17 @@ export default function Home() {
             {/* Background Photo and Resume Button */}
             <header
                 id='home'
-                className="relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-white"
+                className="mt-16 relative bg-cover bg-center h-screen flex flex-col items-center justify-center text-white"
                 style={{ backgroundImage: "url('/headshot.JPG')" }}
             >
                 <h1 className="text-4xl font-bold text-gray-950">Patrick Allen</h1>
                 <p className="mt-14 text-lg text-gray-950 font-bold">Software Developer | QA Tester | Problem Solver</p>
                 <a
-                    href="/Patrick_Allen-Resume.pdf"
+                    href="/path-to-resume.pdf"
                     download
-                    className="mt-6 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-                    style={{
-                        boxShadow: "0 0 20px rgba(0, 120, 255, 0.6)",
-                        position: "relative",
-                    }}
+                    className="mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-3 rounded-lg hover:scale-105 transition-transform duration-300 flex items-center gap-2"
                 >
+                    <img src="/download.svg" alt="download resume idcon" className='w-10 h-10' />
                     Download Resume
                 </a>
             </header>

@@ -1,4 +1,6 @@
 import React from "react";
+import ScrollProgress from "./ScrollProgress";
+import ThemeToggle from "./Theme";
 
 export default function Header() {
     return (
@@ -11,7 +13,7 @@ export default function Header() {
                 >
                     Patrick Allen
                 </h1>
-
+                {/* <ThemeToggle /> */}
                 {/* Navigation Links */}
                 <nav>
                     <div className="flex space-x-4">
@@ -48,6 +50,7 @@ export default function Header() {
                     </div>
                 </nav>
             </div>
+            <ScrollProgress />
         </div>
     );
 };

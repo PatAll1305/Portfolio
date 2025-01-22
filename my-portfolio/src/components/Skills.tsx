@@ -53,7 +53,20 @@ const skills = [
     {
         name: "Postman",
         image: '/postman.svg'
-    }
+    },
+    {
+        name: "Python",
+        image: '/python.svg'
+    },
+    {
+        name: "Django",
+        image: '/django.svg'
+    },
+    {
+        name: "Redux",
+        image: '/redux.svg'
+    },
+
 ];
 
 export default function Skills() {
@@ -64,7 +77,7 @@ export default function Skills() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {skills.map((skill, index) => (
                     <AnimatedWrapper animation={index % 2 === 0 ? "fadeLeft" : "fadeRight"}>
-                        <div key={skill.name} className="flex flex-col items-center">
+                        <div key={skill.name} className="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
                             <img src={skill.image} alt={skill.name} className="w-12 h-12 mb-4" />
                             <p className="text-sm font-medium">{skill.name}</p>
                         </div>
