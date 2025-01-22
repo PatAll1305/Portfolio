@@ -3,7 +3,7 @@ import AnimatedWrapper from "./Animations";
 
 export default function About() {
     return (
-        <AnimatedWrapper animation="fadeRight">
+        <AnimatedWrapper>
             <div id='about' className="bg-gray-100 py-10 px-6 mt-14">
                 <div className="max-w-4xl mx-auto text-gray-800">
                     {/* Header Section */}
