@@ -97,7 +97,7 @@ export default function About() {
                             Thank you for taking the time to learn about me! Feel free to{" "}
                             <a
                                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                                className="text-blue-500 underline hover:text-blue-700"
+                                className="text-blue-500 underline cursor-pointer hover:text-blue-700"
                             >
                                 reach out
                             </a>{" "}
