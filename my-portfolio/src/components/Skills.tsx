@@ -73,11 +73,11 @@ export default function Skills() {
     return (
 
         <section id="skills" className="py-16 px-4">
-            <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-6">Skills</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
                 {skills.map((skill, index) => (
                     <AnimatedWrapper animation={index % 2 === 0 ? "fadeLeft" : "fadeRight"}>
-                        <div key={skill.name} className="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300">
+                        <div key={skill.name} className="flex flex-col items-center p-4 bg-gray-100 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
                             <img src={skill.image} alt={skill.name} className="w-12 h-12 mb-4" />
                             <p className="text-sm font-medium">{skill.name}</p>
                         </div>
